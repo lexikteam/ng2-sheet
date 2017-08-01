@@ -15,6 +15,8 @@ Old demo https://embed.plnkr.co/w0IzEGmMDmyN5TbuRXer/
 ###### yarn
 `yarn add ng2-sheet`
 
+Finally import the `SheetModule`.
+
 How use sheet list
 ==================
 
