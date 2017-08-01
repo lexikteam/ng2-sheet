@@ -1,5 +1,8 @@
 # ng2-sheet
 
+[![NPM Version](https://img.shields.io/npm/v/ng2-sheet.svg)](https://www.npmjs.com/package/ng2-sheet)
+[![NPM Downloads](https://img.shields.io/npm/dt/ng2-sheet.svg)](https://www.npmjs.com/package/ng2-sheet)
+
 ## Example
 
 Old demo https://embed.plnkr.co/w0IzEGmMDmyN5TbuRXer/
