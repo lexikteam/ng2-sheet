@@ -32,16 +32,14 @@
     "@angular/forms": "^4.0.0"
   },
   "dependencies": {
-    "global": "^4.3.2",
-    "jquery": "^3.2.1",
-    "typescript": "^2.4.2"
+    "jquery": "^3.2.1"
   },
   "directories": {
     "lib": "lib"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/lexik/ng2-sheet.git"
+    "url": "git+https://github.com/lexikteam/ng2-sheet"
   },
-  "homepage": "https://bitbucket.org/lexik/ng2-sheet#readme"
+  "homepage": "https://github.com/lexikteam/ng2-sheet#readme"
 }
