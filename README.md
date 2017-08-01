@@ -1,3 +1,17 @@
+# ng2-sheet
+
+## Example
+
+Old demo https://embed.plnkr.co/w0IzEGmMDmyN5TbuRXer/
+
+## Installation
+
+###### NPM 5
+`npm install ng2-sheet`
+
+###### yarn
+`yarn add ng2-sheet`
+
 How use sheet list
 ==================
 
@@ -79,3 +93,8 @@ showOther() {
     this.sheetList.addSheet(OtherTestComponent, 'OtherTestComponent');
   }
 ```
+
+
+###### @TODO
+
+- Replace jQuery with Angular animations
