@@ -3,7 +3,8 @@
 [![NPM Version](https://img.shields.io/npm/v/ng2-sheet.svg)](https://www.npmjs.com/package/ng2-sheet)
 [![NPM Downloads](https://img.shields.io/npm/dt/ng2-sheet.svg)](https://www.npmjs.com/package/ng2-sheet)
 
-## Features
+## Features
+
 - Open a nice sheet from the right
 - Choose and add a component to insert inside the sheet
 - You can choose and add an other component to insert on a new sheet over the opened sheet
