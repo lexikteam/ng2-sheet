@@ -30,7 +30,8 @@ Then init the sheet list and save the reference
 You can also subscribe on ouput to be notified when a component is created on a sheet
 ```
 private sheetListInit() {
-    this.sheetList = this.sheetListService.initOrGetSheetList(this.sheetListContainer);
+    this.sheetListService.init(this.sheetListContainer);
+    this.sheetList = this.sheetListService.getComponent();
 
     this.sheetList.onComponentCreated.subscribe(
       (params) => {
