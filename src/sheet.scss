@@ -1,0 +1,116 @@
+.sheet-holder {
+  .sheet-container:nth-last-of-type(1) {
+    .sheet-overlay {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  .sheet-container:nth-last-of-type(2) {
+    .sheet-overlay {
+      opacity: .12;
+      visibility: visible;
+    }
+  }
+
+  .sheet-container:nth-last-of-type(3) {
+    .sheet-overlay {
+      opacity: .12;
+      visibility: visible;
+    }
+  }
+
+  .sheet-container:last-of-type {
+    .sheet {
+      transition-delay: 0s,.4s,.4s;
+      opacity: 0;
+      pointer-events: none;
+      transition: transform .4s,box-shadow 0s,opacity 0s;
+    }
+  }
+
+  .sheet-container:nth-last-of-type(2) {
+    .sheet {
+      box-shadow: 0 0 10px -5px rgba(0,0,0,0.2), 0 0 24px 2px rgba(0,0,0,0.14), 0 0 30px 5px rgba(0,0,0,0.12);
+    }
+  }
+
+  .sheet-overlay {
+    opacity: .12;
+    transition: all .4s;
+    background: black;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    z-index: 2002
+  }
+
+  .sheet {
+    transition: transform .4s;
+    background: #f3f3f4;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2002;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: nowrap;
+
+    .sheet-content {
+      flex: 1 1 auto;
+      order: 3;
+      overflow-y: auto;
+      position: relative;
+
+      margin: 0 auto;
+      padding: 24px 24px 16px;
+
+      @media (min-width: 768px)  {
+        width: 768px;
+      }
+
+      @media (min-width: 1160px)  {
+        width: 960px;
+      }
+    }
+
+    .sheet-header {
+      order: 0;
+      background: #fff;
+      border-bottom: 1px solid transparent;
+      border-bottom-color: #e1e1e1;
+      border-radius: 2px;
+      position: relative;
+      box-shadow: none;
+      padding: 10px 5px 10px 15px;
+    }
+
+    .sheet-header-actions {
+      font-size: 0;
+      padding-right: 24px;
+      text-align: right;
+      display: inline-block;
+    }
+
+    .sheet-scrollpane {
+      order: 3;
+      overflow-y: auto;
+      position: relative;
+      flex: 1 1 auto;
+
+      .sheet-content {
+        overflow-y: visible;
+        background: #ffffff;
+        margin-top: 20px;
+      }
+    }
+  }
+}

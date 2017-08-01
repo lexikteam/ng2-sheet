@@ -1,0 +1,47 @@
+{
+  "name": "ng2-sheet",
+  "version": "1.0.0",
+  "description": "Angular2 Sheet component",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "ngc -p tsconfig-aot.json"
+  },
+  "author": "Gilles Gauthier",
+  "license": "MIT",
+  "devDependencies": {
+    "@angular/common": "^4.0.0",
+    "@angular/compiler": "^4.0.0",
+    "@angular/compiler-cli": "^4.0.0",
+    "@angular/core": "^4.0.0",
+    "@angular/forms": "^4.0.0",
+    "@angular/platform-browser": "^4.0.0",
+    "@angular/platform-browser-dynamic": "^4.0.0",
+    "@angular/platform-server": "^4.0.0",
+    "@angular/router": "^4.0.0",
+    "@types/core-js": "^0.9.34",
+    "@types/node": "^6.0.45",
+    "rxjs": "^5.1.0",
+    "simplemde": "^1.11.2",
+    "zone.js": "^0.8.5"
+  },
+  "peerDependencies": {
+    "@angular/common": "^4.0.0",
+    "@angular/core": "^4.0.0",
+    "@angular/forms": "^4.0.0"
+  },
+  "dependencies": {
+    "global": "^4.3.2",
+    "jquery": "^3.2.1",
+    "typescript": "^2.4.2"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/lexik/ng2-sheet.git"
+  },
+  "homepage": "https://bitbucket.org/lexik/ng2-sheet#readme"
+}
