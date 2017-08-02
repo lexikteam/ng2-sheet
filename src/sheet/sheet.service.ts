@@ -55,21 +55,18 @@ export class SheetService {
     let maxWidth = 0;
     let minWidth = Math.floor((width - 960) / 2);
     let padding = 0;
-    maxWidth ?
-      (
-        maxWidth = Math.max(maxWidth, minWidth),
-          padding = Math.max(width - maxWidth, 0),
-          width = Math.min(maxWidth, width)
-      )
-      :
-      (1160 <= width ?
-        (
-          padding = Math.floor((width - 960) / 2), width -= padding)
-          :
-          768 <= width && (padding = Math.floor((width - 768) / 2), width -= padding
-        )
-      )
-    ;
+
+    if (maxWidth) {
+      maxWidth = Math.max(maxWidth, minWidth);
+      padding = Math.max(width - maxWidth, 0);
+      width = Math.min(maxWidth, width);
+    } else if (1160 <= width) {
+      padding = Math.floor((width - 960) / 2);
+      width -= padding;
+    } else if (768 <= width) {
+      padding = Math.floor((width - 768) / 2);
+      width -= padding;
+    }
 
     this.maxWidth = width;
     this.transform = padding;

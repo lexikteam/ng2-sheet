@@ -1,6 +1,6 @@
 {
   "name": "ng2-sheet",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Angular2 Sheet component",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
