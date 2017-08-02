@@ -1,5 +1,17 @@
 # ng2-sheet
 
+[![NPM Version](https://img.shields.io/npm/v/ng2-sheet.svg)](https://www.npmjs.com/package/ng2-sheet)
+[![NPM Downloads](https://img.shields.io/npm/dt/ng2-sheet.svg)](https://www.npmjs.com/package/ng2-sheet)
+
+## Features
+
+- Open a nice sheet from the right
+- Choose and add a component to insert inside the sheet
+- You can choose and add an other component to insert on a new sheet over the opened sheet
+- You can do this indefinitely
+
+This component works perfectly with Redux implementation like ngrx-store.
+
 ## Example
 
 Old demo https://embed.plnkr.co/w0IzEGmMDmyN5TbuRXer/
@@ -11,6 +23,8 @@ Old demo https://embed.plnkr.co/w0IzEGmMDmyN5TbuRXer/
 
 ###### yarn
 `yarn add ng2-sheet`
+
+Finally import the `SheetModule`.
 
 How use sheet list
 ==================
