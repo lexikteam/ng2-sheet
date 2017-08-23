@@ -66,6 +66,14 @@ createTest() {
     this.sheetList.addSheet(TestComponent, 'TestComponent', inputParams);
   }
 ```
+Don't forget to add your component into the entryComponents entry of your module:
+
+```
+@NgModule({
+ ...,
+ entryComponents: [TestComponent]
+})
+```
 
 Now you can subscribe to the output
 
